@@ -2,6 +2,10 @@ alert(
   "Привет. Не успел доделать. Буду благодарен, если повременишь с проверкой. Спасибо за понимание :)"
 );
 
+// Перед стартом подгружу мои массивы соответствующие клавишам на клавиатуре
+import enLang from './enkeys.js';
+import ruLang from './rukeys.js';
+
 // 
 // Для начала задам структуру header, main, footer 
 //
@@ -60,7 +64,19 @@ const keyboard = document.createElement('section');
 keyboard.classList.add('keyboard');
 main.appendChild(keyboard);
 
-// Добавляю внутрь этой секции блок в котором будут клавиши клавиатуры
-const keys = document.createElement('div');
-keys.classList.add('keys');
-keyboard.appendChild(keys);
+// 
+
+let jsonKeyboard = enLang;
+for (let i = 0; i < jsonKeyboard.length; i += 1) {
+  const divRows = document.createElement('div');
+  divRows.classList.add('button-row');
+  for (let j = 0; j < jsonKeyboard[i].length; j += 1) {
+    const button = document.createElement('button');
+    button.classList.add(...jsonKeyboard[i][j].class.split(' '));
+    button.innerHTML = jsonKeyboard[i][j].name;
+    button.id = jsonKeyboard[i][j].code;
+    button.setAttribute(jsonKeyboard[i][j].property, true);
+    divRows.appendChild(button);
+  }
+  keyboard.appendChild(divRows);
+}
