@@ -64,7 +64,7 @@ const keyboard = document.createElement('section');
 keyboard.classList.add('keyboard');
 main.appendChild(keyboard);
 
-// 
+
 
 let keys = enLang;
 for (let i = 0; i < keys.length; i += 1) {
@@ -78,5 +78,5 @@ for (let i = 0; i < keys.length; i += 1) {
     button.setAttribute(keys[i][j].property, true);
     divRows.appendChild(button);
   }
-  keyboard.appendChild(divRows);
+  main.appendChild(divRows);
 }
