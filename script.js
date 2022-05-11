@@ -2,5 +2,5 @@ alert(
   "Привет. Не успел доделать. Буду благодарен, если повременишь с проверкой. Спасибо за понимание :)"
 );
 
-const body = document.queryselector("body");
-console.log(body);
+let qBody = document.queryselector(".body");
+console.log(qBody);
