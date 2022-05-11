@@ -4,7 +4,6 @@ alert(
 
 // Перед стартом подгружу мои массивы соответствующие клавишам на клавиатуре
 import enLang from './enkeys.js';
-import ruLang from './rukeys.js';
 
 // 
 // Для начала задам структуру header, main, footer 
