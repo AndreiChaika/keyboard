@@ -5,7 +5,7 @@ alert(
 let qBody = document.querySelector("body");
 console.log(qBody);
 
-const keyboard = document.createElement(".keyboard");
+const keyboard = document.createElement('div class="keyboard"');
 keyboard.innerHTML = `
 <div class="row">
     <div class="key"></div>
