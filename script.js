@@ -36,7 +36,7 @@ const section3 = document.createElement('section');
 section3.classList.add('keyboard');
 section3.id = 'keyboard';
 
-wrapper.appendChild(section3);
+keyboard.appendChild(section3);
 
 const div1 = document.createElement('div');
 div1.classList.add('keyboard-body');
