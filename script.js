@@ -77,5 +77,5 @@ for (let i = 0; i < keys.length; i += 1) {
     button.setAttribute(keys[i][j].property, true);
     divRows.appendChild(button);
   }
-  main.appendChild(divRows);
+  keyboard.appendChild(divRows);
 }
