@@ -66,15 +66,15 @@ main.appendChild(keyboard);
 
 // 
 
-let key = enLang;
-for (let i = 0; i < key.length; i += 1) {
+let keys = enLang;
+for (let i = 0; i < keys.length; i += 1) {
   const divRows = document.createElement('div');
   divRows.classList.add('button-row');
-  for (let j = 0; j < key[i].length; j += 1) {
+  for (let j = 0; j < keys[i].length; j += 1) {
     const button = document.createElement('button');
-    button.classList.add(...key[i][j].class.split(' '));
-    button.innerHTML = key[i][j].key;
-    button.id = key[i][j].name;
+    button.classList.add(...keys[i][j].class.split(' '));
+    button.innerHTML = keys[i][j].key;
+    button.id = keys[i][j].name;
 
     divRows.appendChild(button);
   }
