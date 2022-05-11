@@ -66,16 +66,16 @@ main.appendChild(keyboard);
 
 // 
 
-let jsonKeyboard = enLang;
-for (let i = 0; i < jsonKeyboard.length; i += 1) {
+let key = enLang;
+for (let i = 0; i < key.length; i += 1) {
   const divRows = document.createElement('div');
   divRows.classList.add('button-row');
-  for (let j = 0; j < jsonKeyboard[i].length; j += 1) {
+  for (let j = 0; j < key[i].length; j += 1) {
     const button = document.createElement('button');
-    button.classList.add(...jsonKeyboard[i][j].class.split(' '));
-    button.innerHTML = jsonKeyboard[i][j].name;
-    button.id = jsonKeyboard[i][j].code;
-    button.setAttribute(jsonKeyboard[i][j].property, true);
+    button.classList.add(...key[i][j].class.split(' '));
+    button.innerHTML = key[i][j].key;
+    button.id = key[i][j].name;
+
     divRows.appendChild(button);
   }
   keyboard.appendChild(divRows);
