@@ -5,7 +5,8 @@ alert(
 let qBody = document.querySelector("body");
 console.log(qBody);
 
-const keyboard = document.createElement("div");
+const keyboard = document.createElement("section");
+keyboard.classList.add('wrapper');
 keyboard.innerHTML = `
 <div class="row">
     <div class="key"></div>
