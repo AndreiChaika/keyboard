@@ -4,3 +4,6 @@ alert(
 
 let qBody = document.querySelector("body");
 console.log(qBody);
+
+let wrapper = document.createElement('div');
+wrapper.classList.add('wrapper');
