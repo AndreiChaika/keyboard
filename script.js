@@ -58,7 +58,7 @@ input.appendChild(textarea);
 // Добавляю секцию с классом "keyboard", где будет размещаться сама виртуальная клавиатура
 const keyboard = document.createElement('section');
 keyboard.classList.add('keyboard');
-input.appendChild(keyboard);
+main.appendChild(keyboard);
 
 // Добавляю внутрь этой секции блок в котором будут клавиши клавиатуры
 const keys = document.createElement('div');
