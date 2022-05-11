@@ -12,7 +12,7 @@ document.body.appendChild(keyboard);
 const section1 = document.createElement('section');
 section1.classList.add('header');
 section1.id = 'header';
-wrapper.appendChild(section1);
+keyboard.appendChild(section1);
 
 // Добавляю заголовок h1 с class="title" с текстом RSS Виртуальная клавиатура
 const h1 = document.createElement('h1');
@@ -29,7 +29,7 @@ section2.id = 'input';
 const textarea = document.createElement('textarea');
 textarea.classList.add('input-area');
 section2.appendChild(textarea);
-wrapper.appendChild(section2);
+keyboard.appendChild(section2);
 
 // Добавляю ещё одну section с class="keyboard" и id="keyboard"
 const section3 = document.createElement('section');
