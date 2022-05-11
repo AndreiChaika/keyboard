@@ -1,5 +1,10 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable import/extensions */
+alert(
+  "Привет. Не успел доделать. Буду благодарен, если повременишь с проверкой. Спасибо за понимание :)"
+);
+
+
 import enLang from './enkeys.js';
 
 let enKey = enLang;
