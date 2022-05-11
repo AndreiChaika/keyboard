@@ -5,5 +5,6 @@ alert(
 let qBody = document.querySelector("body");
 console.log(qBody);
 
-let wrapper = document.createElement('div');
-wrapper.classList.add('wrapper');
+const para = document.createElement("p");
+para.innerText = "This is a paragraph";
+document.body.appendChild(para);
