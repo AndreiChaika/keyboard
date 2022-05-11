@@ -73,9 +73,8 @@ for (let i = 0; i < keys.length; i += 1) {
   for (let j = 0; j < keys[i].length; j += 1) {
     const button = document.createElement('button');
     button.classList.add(...keys[i][j].class.split(' '));
-    button.innerHTML = keys[i][j].key;
-    button.id = keys[i][j].name;
-
+    button.innerHTML = keys[i][j].name;
+    button.id = keys[i][j].code;
     divRows.appendChild(button);
   }
   keyboard.appendChild(divRows);
