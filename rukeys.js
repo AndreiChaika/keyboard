@@ -659,7 +659,7 @@ const ruLang = [
 
   [
     {
-      key: 'Ctrl',
+      key: 'Control',
       name: 'Ctrl',
       nameShift: 'Ctrl',
       keyCode: 17,
@@ -675,7 +675,7 @@ const ruLang = [
       property: 'nonprintable',
     },
     {
-      key: 'Win',
+      key: 'Meta',
       name: 'Win',
       nameShift: 'Win',
       keyCode: 91,
@@ -782,7 +782,7 @@ const ruLang = [
       property: 'printable',
     },
     {
-      key: 'Ctrl',
+      key: 'Control',
       name: 'Ctrl',
       nameShift: 'Ctrl',
       keyCode: 17,

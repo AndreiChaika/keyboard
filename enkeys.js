@@ -659,7 +659,7 @@ const enLang = [
   
     [
       {
-        key: 'Ctrl',
+        key: 'Control',
         name: 'Ctrl',
         nameShift: 'Ctrl',
         keyCode: 17,
@@ -675,7 +675,7 @@ const enLang = [
         property: 'nonprintable',
       },
       {
-        key: 'Win',
+        key: 'Meta',
         name: 'Win',
         nameShift: 'Win',
         keyCode: 91,
@@ -783,7 +783,7 @@ const enLang = [
         property: 'printable',
       },
       {
-        key: 'Ctrl',
+        key: 'Control',
         name: 'Ctrl',
         nameShift: 'Ctrl',
         keyCode: 17,

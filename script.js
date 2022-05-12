@@ -79,7 +79,7 @@ for (let i = 0; i < keys.length; i += 1) {
     // Задаю условие создания button внутри row после прохождения каждого j с добавлением класса (по ключу class извлекаю значение), с добавлением текста внутрь button (по ключу key извлекаю значение) и с добавлением в button своего id (по ключу code извлекаю значение)
     const button = document.createElement('button');
     button.classList.add(...keys[i][j].class.split(' '));
-    button.innerHTML = keys[i][j].key;
+    button.innerHTML = keys[i][j].name;
     button.id = keys[i][j].code;
     button.setAttribute(keys[i][j].property, true);
     row.appendChild(button);
