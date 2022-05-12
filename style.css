@@ -1,5 +1,18 @@
 body {
-    background: #f1f1f1;
+    font-family: PT Sans, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f1f1f1;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 button {
     height: 40px;
