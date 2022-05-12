@@ -163,7 +163,7 @@ const ruLang = [
       location: 0,
       description: 'backspace / delete',
       unicode: '⌫',
-      class: 'small longkey',
+      class: 'large longkey',
       property: 'nonprintable',
     },
   ],
@@ -496,7 +496,7 @@ const ruLang = [
       location: 0,
       description: 'Enter / Return',
       unicode: '↵',
-      class: 'medium longkey',
+      class: 'large longkey',
       property: 'nonprintable',
     },
   ],
@@ -511,7 +511,7 @@ const ruLang = [
       location: 1,
       description: 'shift',
       unicode: '⇧',
-      class: 'small longkey',
+      class: 'medium longkey',
       property: 'nonprintable',
     },
     {
@@ -659,7 +659,7 @@ const ruLang = [
 
   [
     {
-      key: 'Control',
+      key: 'Ctrl',
       name: 'Ctrl',
       nameShift: 'Ctrl',
       keyCode: 17,
@@ -675,7 +675,7 @@ const ruLang = [
       property: 'nonprintable',
     },
     {
-      key: 'Meta',
+      key: 'Win',
       name: 'Win',
       nameShift: 'Win',
       keyCode: 91,
@@ -718,7 +718,7 @@ const ruLang = [
       metaKey: false,
       shiftKey: false,
       repeat: false,
-      class: 'large longkey',
+      class: 'space longkey',
       property: 'nonprintable',
     },
     {
@@ -782,7 +782,7 @@ const ruLang = [
       property: 'printable',
     },
     {
-      key: 'Control',
+      key: 'Ctrl',
       name: 'Ctrl',
       nameShift: 'Ctrl',
       keyCode: 17,

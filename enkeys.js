@@ -163,7 +163,7 @@ const enLang = [
         location: 0,
         description: 'backspace / delete',
         unicode: '⌫',
-        class: 'small longkey',
+        class: 'large longkey',
         property: 'nonprintable',
       },
     ],
@@ -347,7 +347,7 @@ const enLang = [
   
     [
       {
-        key: 'CapsLock',
+        key: 'Caps',
         name: 'CapsLock',
         nameShift: 'CapsLock',
         keyCode: 20,
@@ -511,7 +511,7 @@ const enLang = [
         location: 1,
         description: 'shift',
         unicode: '⇧',
-        class: 'small longkey',
+        class: 'medium longkey',
         property: 'nonprintable',
       },
       {
@@ -652,14 +652,14 @@ const enLang = [
         location: 1,
         description: 'shift',
         unicode: '⇧',
-        class: 'large longkey',
+        class: 'medium longkey',
         property: 'nonprintable',
       },
     ],
   
     [
       {
-        key: 'Control',
+        key: 'Ctrl',
         name: 'Ctrl',
         nameShift: 'Ctrl',
         keyCode: 17,
@@ -675,7 +675,7 @@ const enLang = [
         property: 'nonprintable',
       },
       {
-        key: 'Meta',
+        key: 'Win',
         name: 'Win',
         nameShift: 'Win',
         keyCode: 91,
@@ -718,7 +718,7 @@ const enLang = [
         metaKey: false,
         shiftKey: false,
         repeat: false,
-        class: 'large',
+        class: 'space longkey',
         property: 'large',
       },
       {
@@ -783,7 +783,7 @@ const enLang = [
         property: 'printable',
       },
       {
-        key: 'Control',
+        key: 'Ctrl',
         name: 'Ctrl',
         nameShift: 'Ctrl',
         keyCode: 17,
