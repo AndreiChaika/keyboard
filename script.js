@@ -159,7 +159,7 @@ function setLanguage(language) {
   translate();
 }
 
-/*
+
 // Просто фича, которую можно сделать для удобства
 // Создадим переменную с произвольным значением 'en'
 let lang = 'en';
@@ -184,7 +184,6 @@ function getLocalStorage() {
 }
 window.addEventListener('load', getLocalStorage);
 
-*/
 // Зададим переменную по полю для ввода текста
 const virtTextarea = document.querySelector('textarea');
 

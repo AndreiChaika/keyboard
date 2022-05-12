@@ -1,7 +1,7 @@
 const enLang = [
     [
         { code: 'Key_Backtick', key: '`', shiftKey: '~', class: 'shortkey',  property: 'printable', }, 
-        { code: 'Key_1', key: '1', shiftKey: '!', class: 'shortkey',  property: 'printable', }, 
+        { code: 'Key_1', key: '1', shiftKey: '!', class: 'shortkey',  property: 'printable',  keyCode: 49, location: 0, description: '1 Key',  unicode: '①', }, 
         { code: 'Key_2', key: '2', shiftKey: '@', class: 'shortkey',  property: 'printable', }, 
         { code: 'Key_3', key: '3', shiftKey: '#', class: 'shortkey',  property: 'printable', }, 
         { code: 'Key_4', key: '4', shiftKey: '$', class: 'shortkey',  property: 'printable', }, 
