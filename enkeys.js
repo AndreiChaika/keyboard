@@ -347,15 +347,15 @@ const enLang = [
 
   [
     {
-      key: 'Caps',
-      name: 'Caps',
-      nameShift: 'Caps',
+      key: 'CapsLock',
+      name: 'CapsLock',
+      nameShift: 'CapsLock',
       keyCode: 20,
       code: 'CapsLock',
       location: 0,
       description: 'caps lock',
       unicode: '⇪',
-      class: 'small longkey',
+      class: 'medium longkey',
       property: 'nonprintable',
     },
     {
@@ -496,7 +496,7 @@ const enLang = [
       location: 0,
       description: 'Enter / Return',
       unicode: '↵',
-      class: 'large longkey',
+      class: 'medium longkey',
       property: 'nonprintable',
     },
   ],
