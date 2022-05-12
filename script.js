@@ -63,7 +63,7 @@ input.appendChild(textarea);
 
 // Добавляю секцию с классом "keyboardbody", где будет размещаться сама виртуальная клавиатура
 const keyboardbody = document.createElement('section');
-keyboardbody.classList.add('keyboardbody', 'animation');
+keyboardbody.classList.add('keyboard', 'animation');
 main.appendChild(keyboardbody);
 
 // Для начала привязываю массив с данными клавиш английской раскладки к переменной keys.
@@ -88,7 +88,7 @@ for (let i = 0; i < keys.length; i += 1) {
 }
 
 const inputText = document.querySelector('textarea');
-const keyboard = document.querySelector('.keyboardbody');
+const keyboard = document.querySelector('.keyboard');
 const btnEnter = document.querySelector('#Enter');
 const btnTab = document.querySelector('#Tab');
 const btnDel = document.querySelector('#Delete');
