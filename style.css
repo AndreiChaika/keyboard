@@ -67,6 +67,8 @@ button {
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
 }
 header {
     -webkit-animation-delay: 0.3s;
@@ -84,7 +86,7 @@ footer {
     -webkit-animation-delay: 1.2s;
     animation-delay: 1.2s;
 }
-@-webkit-keyframes animation {
+@-webkit-keyframes fadeInDown {
     0% {
        opacity: 0;
        -webkit-transform: translateY(-20px);
@@ -94,7 +96,7 @@ footer {
        -webkit-transform: translateY(0);
     }
  }
- @keyframes animation {
+ @keyframes fadeInDown {
     0% {
        opacity: 0;
        transform: translateY(-20px);
