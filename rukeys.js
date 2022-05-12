@@ -347,9 +347,9 @@ const ruLang = [
 
   [
     {
-      key: 'CapsLock',
-      name: 'CapsLock',
-      nameShift: 'CapsLock',
+      key: 'Caps',
+      name: 'Caps',
+      nameShift: 'Caps',
       keyCode: 20,
       code: 'CapsLock',
       location: 0,
@@ -641,7 +641,7 @@ const ruLang = [
       shiftKey: false,
       repeat: false,
       class: 'small longkey',
-      property: 'printable',
+      property: 'nonprintable',
     },
     {
       key: 'Shift',
@@ -750,7 +750,7 @@ const ruLang = [
       shiftKey: false,
       repeat: false,
       class: 'small longkey',
-      property: 'printable',
+      property: 'nonprintable',
     },
     {
       key: 'ArrowDown',
@@ -765,7 +765,7 @@ const ruLang = [
       shiftKey: false,
       repeat: false,
       class: 'small longkey',
-      property: 'printable',
+      property: 'nonprintable',
     },
     {
       key: 'ArrowRight',
@@ -779,7 +779,7 @@ const ruLang = [
       shiftKey: false,
       repeat: false,
       class: 'small longkey',
-      property: 'printable',
+      property: 'nonprintable',
     },
     {
       key: 'Control',

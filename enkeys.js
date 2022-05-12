@@ -348,8 +348,8 @@ const enLang = [
     [
       {
         key: 'Caps',
-        name: 'CapsLock',
-        nameShift: 'CapsLock',
+        name: 'Caps',
+        nameShift: 'Caps',
         keyCode: 20,
         code: 'CapsLock',
         location: 0,
@@ -641,7 +641,7 @@ const enLang = [
         shiftKey: false,
         repeat: false,
         class: 'small longkey',
-        property: 'printable',
+        property: 'nonprintable',
       },
       {
         key: 'Shift',
@@ -750,7 +750,7 @@ const enLang = [
         shiftKey: false,
         repeat: false,
         class: 'small longkey',
-        property: 'printable',
+        property: 'nonprintable',
       },
       {
         key: 'ArrowDown',
@@ -765,7 +765,7 @@ const enLang = [
         shiftKey: false,
         repeat: false,
         class: 'small longkey',
-        property: 'printable',
+        property: 'nonprintable',
       },
       {
         key: 'ArrowRight',
@@ -780,7 +780,7 @@ const enLang = [
         shiftKey: false,
         repeat: false,
         class: 'small longkey',
-        property: 'printable',
+        property: 'nonprintable',
       },
       {
         key: 'Control',
