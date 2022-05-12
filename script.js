@@ -1,92 +1,88 @@
-alert(
-  "Привет. Не успел доделать. Буду благодарен, если повременишь с проверкой. До 19:00 (по МСК) закончу. Спасибо за понимание :)"
-);
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+import jsonKeyboardEn from './dataEn.js';
+import jsonKeyboardRu from './dataRu.js';
 
-// Перед стартом подгружу мои массивы соответствующие клавишам на клавиатуре
-import enLang from './enkeys.js';
-import ruLang from './rukeys.js';
+let jsonKeyboard = jsonKeyboardEn;
+const body = document.querySelector('body');
+const wrapper = document.createElement('div');
+wrapper.classList.add('wrapper');
 
-let keys = enLang;
-// 
-// Для начала задам структуру header, main, footer 
-//
+const section1 = document.createElement('section');
+section1.classList.add('header');
+section1.id = 'header';
 
-// Добавляю header, где будет размещен заголовок
-const header = document.createElement('header');
-header.classList.add('animation');
-document.body.appendChild(header);
-
-// Добавляю main, где будет размещена вся структура клавиатуры с полем вывода текста
-const main = document.createElement('main');
-document.body.appendChild(main);
-
-// Добавляю footer, где будет размещена информация по смене языка
-const footer = document.createElement('footer');
-footer.classList.add('animation');
-document.body.appendChild(footer);
-
-//
-// Контент для header
-//
-
-// Добавляю заголовок h1 с текстом в header
 const h1 = document.createElement('h1');
-header.appendChild(h1);
-h1.textContent = 'Virtual Keyboard by Andrei Chaika';
+h1.classList.add('title');
+section1.appendChild(h1);
+h1.textContent = 'RSS Виртуальная клавиатура';
 
-//
-// Контент для footer
-//
+wrapper.appendChild(section1);
 
-// Добавляю подпись p с текстом в footer
-const p = document.createElement('p');
-footer.appendChild(p);
-p.textContent = 'Клавиатура создана для Операционной системы Windows Переключение языка осуществляется через комбинацию Alt + Shift';
+const section2 = document.createElement('section');
+section2.classList.add('input');
+section2.id = 'input';
 
-
-
-
-
-// Теперь начинается основа разработки 
-
-//
-// Структура для main
-//
-
-// Добавляю секцию с классом "input", где будет размещаться поле для вывода текста с клавиатуры
-const input = document.createElement('section');
-input.classList.add('input', 'animation');
-main.appendChild(input);
-// Размещаю поле для вывода текста с клавиатуры
 const textarea = document.createElement('textarea');
-textarea.classList.add('textarea');
-input.appendChild(textarea);
+textarea.classList.add('input-area');
+section2.appendChild(textarea);
 
-// Добавляю секцию с классом "keyboard", где будет размещаться сама виртуальная клавиатура
-const keyboard = document.createElement('section');
-keyboard.classList.add('keyboard', 'animation');
-main.appendChild(keyboard);
+wrapper.appendChild(section2);
 
-// Для начала привязываю массив с данными клавиш английской раскладки к переменной keys.
-let keys = enLang;
+const section3 = document.createElement('section');
+section3.classList.add('keyboard');
+section3.id = 'keyboard';
 
-// Создаю цикл, который сперва будет перебирать массив по элементам (оно же i)
-for (let i = 0; i < keys.length; i += 1) {
-  // Задаю условие создание новых блоков с классом "row" после прохождения каждого i
-  const row = document.createElement('div');
-  row.classList.add('row');
-  //  Внутрь цикла размещаю ещё один цикл, который внутри i-ых элементов массива будет перебирать элементы вложенных в них массивов (они же j) 
-  for (let j = 0; j < keys[i].length; j += 1) {
-    // Задаю условие создания button внутри row после прохождения каждого j с добавлением класса (по ключу class извлекаю значение), с добавлением текста внутрь button (по ключу name извлекаю значение) и с добавлением в button своего id (по ключу code извлекаю значение)
+const div1 = document.createElement('div');
+div1.classList.add('keyboard-body');
+
+section3.appendChild(div1);
+
+const div2 = document.createElement('div');
+div2.classList.add('keyboard-buttons');
+
+div1.appendChild(div2);
+
+for (let i = 0; i < jsonKeyboard.length; i += 1) {
+  const divRows = document.createElement('div');
+  divRows.classList.add('button-row');
+  for (let j = 0; j < jsonKeyboard[i].length; j += 1) {
     const button = document.createElement('button');
-    button.classList.add(...keys[i][j].class.split(' '));
-    button.innerHTML = keys[i][j].name;
-    button.id = keys[i][j].code;
-    row.appendChild(button);
+    button.classList.add(...jsonKeyboard[i][j].class.split(' '));
+    button.innerHTML = jsonKeyboard[i][j].name;
+    button.id = jsonKeyboard[i][j].code;
+    button.setAttribute(jsonKeyboard[i][j].property, true);
+    divRows.appendChild(button);
   }
-  keyboard.appendChild(row);
+  div2.appendChild(divRows);
 }
 
+wrapper.appendChild(section3);
+
+const section4 = document.createElement('section');
+section4.classList.add('notes');
+section4.id = 'notes';
+
+const div3 = document.createElement('div');
+div3.classList.add('note-text');
+
+const p1 = document.createElement('p');
+div3.appendChild(p1);
+p1.textContent = 'Клавиатура создана в операционной системе Windows';
+
+const p2 = document.createElement('p');
+p2.innerHTML = 'Для переключения языка воспользуйтесь комбинацией <span>Shift + Alt</span>';
+const span = document.createElement('span');
+
+p2.appendChild(span);
+
+div3.appendChild(p2);
+
+section4.appendChild(div3);
+
+wrapper.appendChild(section4);
+
+body.appendChild(wrapper);
 
 const inputText = document.querySelector('textarea');
 const keyboard = document.querySelector('#keyboard');
@@ -109,9 +105,9 @@ let shiftState = 0;
 let altState = 0;
 
 function findKey(code) {
-  for (let i = 0; i < keys.length; i += 1) {
-    for (let j = 0; j < keys[i].length; j += 1) {
-      if (keys[i][j].code === code) return keys[i][j];
+  for (let i = 0; i < jsonKeyboard.length; i += 1) {
+    for (let j = 0; j < jsonKeyboard[i].length; j += 1) {
+      if (jsonKeyboard[i][j].code === code) return jsonKeyboard[i][j];
     }
   }
   return null;
@@ -131,10 +127,10 @@ function changeLetters() {
 function setLang(langT) {
   switch (langT) {
     case 'en':
-      keys = enLang;
+      jsonKeyboard = jsonKeyboardEn;
       break;
     case 'ru':
-      keys = ruLang;
+      jsonKeyboard = jsonKeyboardRu;
       break;
 
     default:
