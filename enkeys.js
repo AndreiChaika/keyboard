@@ -13,7 +13,7 @@ const enLang = [
         { code: 'Key_0', name: '0', shiftName: ')', class: 'shortkey', }, 
         { code: 'Key_Minus', name: '-', shiftName: '_', class: 'shortkey', }, 
         { code: 'Key_Equal', name: '=', shiftName: '+', class: 'shortkey', }, 
-        { code: 'Key_Backspace', name: 'Backspace', shiftName: 'Backspace', class: 'longkey medium', }, 
+        { code: 'Key_Backspace', name: 'Backspace', shiftName: 'Backspace', class: 'longkey large', }, 
     ],
     [
         { code: 'Key_Tab', name: 'Tab', shiftName: 'Tab', class: 'longkey small', }, 
@@ -33,7 +33,7 @@ const enLang = [
         { code: 'Key_Delete', name: 'Del', shiftName: 'Del', class: 'longkey small', },
     ],
     [
-        { code: 'Key_Caps', name: 'CapsLock', shiftName: 'CapsLock', class: 'longkey medium', }, 
+        { code: 'Key_Caps', name: 'Caps', shiftName: 'Caps', class: 'longkey small', }, 
         { code: 'Key_A', name: 'a', shiftName: 'A', class: 'shortkey', }, 
         { code: 'Key_S', name: 's', shiftName: 'S', class: 'shortkey', }, 
         { code: 'Key_D', name: 'd', shiftName: 'D', class: 'shortkey', }, 
@@ -45,7 +45,7 @@ const enLang = [
         { code: 'Key_L', name: 'l', shiftName: 'L', class: 'shortkey', }, 
         { code: 'Key_Semicolon', name: ';', shiftName: ':', class: 'shortkey', }, 
         { code: 'Key_Quote', name: ' ', shiftName: '', class: 'shortkey', }, 
-        { code: 'Key_Enter', name: 'Enter', shiftName: 'Enter', class: 'longkey medium', },
+        { code: 'Key_Enter', name: 'Enter', shiftName: 'Enter', class: 'longkey large', },
     ],
     [
         { code: 'Key_Shift_Left', name: 'Shift', shiftName: 'Shift', class: 'longkey medium', }, 
@@ -66,7 +66,7 @@ const enLang = [
         { code: 'Key_Ctrl_Left', name: 'Ctrl', shiftName: 'Ctrl', class: 'longkey small', }, 
         { code: 'Key_Win', name: 'Win', shiftName: 'Win', class: 'longkey small', }, 
         { code: 'Key_Alt_Left', name: 'Alt', shiftName: 'Alt', class: 'longkey small', }, 
-        { code: 'Key_Space', name: ' ', shiftName: ' ', class: 'longkey large', }, 
+        { code: 'Key_Space', name: ' ', shiftName: ' ', class: 'longkey space', }, 
         { code: 'Key_Alt_Right', name: 'Alt', shiftName: 'Alt', class: 'longkey small', }, 
         { code: 'Key_Left', name: '◄', shiftName: '◄', class: 'shortkey', }, 
         { code: 'Key_Down', name: '▼', shiftName: '▼', class: 'shortkey', }, 

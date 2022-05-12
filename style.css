@@ -126,12 +126,15 @@ footer {
 .shortkey {
     width: 40px;
 }
-.medium {
-    width: 200px;
-}
 .small {
     width: 60px;
 }
+.medium {
+    width: 105px;
+}
 .large {
-    width: 300px;
+    width: 130px;
+}
+.space {
+    width: 290px;
 }
