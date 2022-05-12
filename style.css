@@ -1,8 +1,7 @@
 body {
     font-family: PT Sans, sans-serif;
     font-size: 16px;
-    color: #fff;
-    background-color: #f1f1f1;
+    background-color: #999;
     -webkit-font-smoothing: antialiased;
     display: flex;
     flex-direction: column;
@@ -23,10 +22,22 @@ button {
     cursor: pointer;
     transition: 0.5s;
     text-align: center;
-    margin: 3px;
-    padding: 8px 0px;
+    margin: 5px;
+    padding: 5px;
     font-size: 16px;
-    box-shadow: 0 1px 1px 1px #333;
+    box-shadow: 0 0.5em 0.5em -0.5em #555;
+    border: 1px solid #ccc;
+}
+.keyboard {
+    border: 3px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 0.5em 0.5em -0.5em #555;
+    padding: 5px 5px;
+    background-color: #f1f1f1;
+    margin-bottom: 20px;
+}
+.button-row {
+    display: flex;
 }
 .shortkey {
     width: 40px;
