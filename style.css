@@ -141,10 +141,18 @@ footer {
 
 
 @media (max-width: 480px) {
+h1 {
+    max-width: 320px;
+    margin: 0 auto;
+}
 button {
     margin: 1px;
     padding: 2px;
-    font-size: 14px;
-    height: 30px
+    font-size: 12px;
+    height: 30px;
     }
+.large {
+    width: 110px;
+}
+.medium {width: 95px;}
 }
