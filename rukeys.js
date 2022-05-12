@@ -641,7 +641,7 @@ const ruLang = [
       shiftKey: false,
       repeat: false,
       class: 'small longkey',
-      property: 'nonprintable',
+      property: 'printable',
     },
     {
       key: 'Shift',
@@ -750,7 +750,7 @@ const ruLang = [
       shiftKey: false,
       repeat: false,
       class: 'small longkey',
-      property: 'nonprintable',
+      property: 'printable',
     },
     {
       key: 'ArrowDown',
@@ -765,7 +765,7 @@ const ruLang = [
       shiftKey: false,
       repeat: false,
       class: 'small longkey',
-      property: 'nonprintable',
+      property: 'printable',
     },
     {
       key: 'ArrowRight',
@@ -779,7 +779,7 @@ const ruLang = [
       shiftKey: false,
       repeat: false,
       class: 'small longkey',
-      property: 'nonprintable',
+      property: 'printable',
     },
     {
       key: 'Control',
