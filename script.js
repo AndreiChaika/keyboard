@@ -135,10 +135,10 @@ function translate() {
     // К функции. Если Shift не нажат, то используется обычная клавиша Key
     if (shiftStatus === 0) {
       // И на место элемента вставляется тот code, что был найден в предыдущей функции по поиску совпадения
-      virtElement.innerHTML = findKey(virtElement.id).key;
+      virtElement.innerHTML = findKey(virtElement.id).name;
     } else {
       // Иначе на место элемента подставляется из массива значение шифтовой клавиши shiftKey
-      virtElement.innerHTML = findKey(virtElement.id).shiftKey;
+      virtElement.innerHTML = findKey(virtElement.id).shiftName;
     }
   });
 }
@@ -340,7 +340,7 @@ function keyDown(event) {
   if (k.property !== 'printable') {
     let s;
     if (shiftStatus === 0) s = k.name;
-    else s = k.nameShift;
+    else s = k.shiftName;
     insertSymbols(s);
   } else {
     switch (k.key) {
