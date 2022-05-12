@@ -118,6 +118,7 @@ footer {
 }
 .row {
     display: flex;
+    justify-content: space-between;
 }
 .longkey {
     max-width: 120px;
