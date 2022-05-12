@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-const ruLang = [
+const jsonKeyboardRu = [
   [
     {
       key: 'ё',
@@ -800,4 +800,4 @@ const ruLang = [
   ],
 ];
 
-export default ruLang;
+export default jsonKeyboardRu;

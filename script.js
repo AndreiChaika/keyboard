@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable import/extensions */
-import jsonKeyboardEn from './dataEn.js';
-import jsonKeyboardRu from './dataRu.js';
+import jsonKeyboardEn from './enkeys.js';
+import jsonKeyboardRu from './rukeys.js';
 
 let jsonKeyboard = jsonKeyboardEn;
 const body = document.querySelector('body');
