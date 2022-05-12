@@ -88,7 +88,7 @@ for (let i = 0; i < keys.length; i += 1) {
 }
 
 const inputText = document.querySelector('.input');
-const keyboard = document.querySelector('.keyboard');
+const keyText = document.querySelector('.keyboard');
 const btnEnter = document.querySelector('#Enter');
 const btnTab = document.querySelector('#Tab');
 const btnDel = document.querySelector('#Delete');
@@ -331,8 +331,8 @@ function keyUp(event) {
 
 inputText.addEventListener('keydown', keyDown);
 inputText.addEventListener('keyup', keyUp);
-keyboard.addEventListener('keydown', keyDown);
-keyboard.addEventListener('keyup', keyUp);
+keyText.addEventListener('keydown', keyDown);
+keyText.addEventListener('keyup', keyUp);
 btnEnter.addEventListener('click', enterClicked);
 btnTab.addEventListener('click', tabClicked);
 btnDel.addEventListener('click', delClicked);
