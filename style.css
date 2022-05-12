@@ -121,9 +121,17 @@ footer {
     justify-content: space-between;
 }
 .longkey {
-    max-width: 120px;
     background-color: #f1f1f1;
 }
 .shortkey {
     width: 40px;
+}
+.medium {
+    width: 200px;
+}
+.small {
+    width: 60px;
+}
+.large {
+    width: 300px;
 }
