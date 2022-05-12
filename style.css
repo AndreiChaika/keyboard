@@ -138,3 +138,13 @@ footer {
 .space {
     width: 290px;
 }
+
+
+@media (max-width: 480px) {
+button {
+    margin: 1px;
+    padding: 2px;
+    font-size: 14px;
+    height: 30px
+    }
+}
