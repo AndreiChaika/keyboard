@@ -1,5 +1,5 @@
 alert(
-  "Привет. Вношу последние правки, осталось чуть-чуть. Можете увидеть, что почти всё закончено. Подождите ещё чуть-чуть. Спасибо за понимание :)"
+  "Фух. Вношу последние правки, осталось чуть-чуть. Можете увидеть, что почти всё закончено. Подождите ещё чуть-чуть. Спасибо за понимание :)"
 );
 
 // Перед стартом подгружу мои массивы соответствующие клавишам на клавиатуре
@@ -157,7 +157,7 @@ window.addEventListener('load', getLocalStorage);
 
 function getCursorPosition() {
   let position = 0;
-  if ((inputText.selectionStart != null) && (inputText.selectionStart !== undefined)) {
+  if ((inputText.selectionStart != null) && ( .selectionStart !== undefined)) {
     position = inputText.selectionStart;
   }
   return position;
@@ -215,8 +215,7 @@ function capslockClicked() {
   if (shiftState === 0) shiftState = 1;
   else shiftState = 0;
   changeLetters();
-  btnCapsLock.classList.toggle('pressed');
-  btnCapsLock.classList.toggle('dark');
+  btnCapsLock.classList.toggle('active');
 }
 
 let langswitched = false;
@@ -270,7 +269,7 @@ function keyDown(event) {
   event.preventDefault();
   const k = findKey(event.code);
   if (k === null) return;
-  if (k.key !== 'CapsLock') document.querySelector(`#${event.code}`).classList.add('pressed');
+  if (k.key !== 'CapsLock') document.querySelector(`#${event.code}`).classList.add('active');
   if (k.property === 'printable') {
     let s;
     if (shiftState === 0) s = k.name;
@@ -313,7 +312,7 @@ function keyUp(event) {
   event.preventDefault();
   const k = findKey(event.code);
   if (k === null) return;
-  if (k.key !== 'CapsLock') document.querySelector(`#${event.code}`).classList.remove('pressed');
+  if (k.key !== 'CapsLock') document.querySelector(`#${event.code}`).classList.remove('active');
   if (k.property !== 'printable') {
     switch (k.key) {
       case 'Shift':
@@ -331,8 +330,8 @@ function keyUp(event) {
 
 inputText.addEventListener('keydown', keyDown);
 inputText.addEventListener('keyup', keyUp);
-keyText.addEventListener('keydown', keyDown);
-keyText.addEventListener('keyup', keyUp);
+keyboard.addEventListener('keydown', keyDown);
+keyboard.addEventListener('keyup', keyUp);
 btnEnter.addEventListener('click', enterClicked); 
 btnTab.addEventListener('click', tabClicked);
 btnDel.addEventListener('click', delClicked);
