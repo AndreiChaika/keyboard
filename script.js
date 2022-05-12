@@ -157,7 +157,7 @@ window.addEventListener('load', getLocalStorage);
 
 function getCursorPosition() {
   let position = 0;
-  if ((inputText.selectionStart != null) && ( .selectionStart !== undefined)) {
+  if ((inputText.selectionStart != null) && ( inputText.selectionStart !== undefined)) {
     position = inputText.selectionStart;
   }
   return position;
