@@ -140,7 +140,7 @@ footer {
 }
 button:active, .active, .active:hover {
     transform: scale(0.95);
-    border-radius: 25px;
+    border-radius: 2px;
     background-color: #b4ceeb;
     box-shadow: none;
 }
