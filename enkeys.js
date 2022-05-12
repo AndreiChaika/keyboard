@@ -44,7 +44,7 @@ const enLang = [
         { code: 'Key_K', name: 'k', shiftName: 'K', class: 'shortkey', }, 
         { code: 'Key_L', name: 'l', shiftName: 'L', class: 'shortkey', }, 
         { code: 'Key_Semicolon', name: ';', shiftName: ':', class: 'shortkey', }, 
-        { code: 'Key_Quote', name: ' ', shiftName: '', class: 'shortkey', }, 
+        { code: 'Key_Quote', name: '\'', shiftName: '\"', class: 'shortkey', }, 
         { code: 'Key_Enter', name: 'Enter', shiftName: 'Enter', class: 'longkey large', },
     ],
     [
