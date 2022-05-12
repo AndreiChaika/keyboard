@@ -326,12 +326,18 @@ function altUp() {
 }
 
 
+//
+// Переходим к созданию переменных для клавиш с префиксом virt
+//
+
+
+
 function keyDown(event) {
   event.preventDefault();
   const k = findKey(event.code);
   if (k === null) return;
   if (k.key !== 'CapsLock') document.querySelector(`#${event.code}`).classList.add('active');
-  if (k.property === 'printable') {
+  if (k.property !== 'printable') {
     let s;
     if (shiftStatus === 0) s = k.name;
     else s = k.nameShift;
@@ -376,7 +382,7 @@ function keyUp(event) {
   const k = findKey(event.code);
   if (k === null) return;
   if (k.key !== 'CapsLock') document.querySelector(`#${event.code}`).classList.remove('active');
-  if (k.property !== 'printable') { {
+  if (k.property !== 'printable') {
     switch (k.key) {
       case 'Shift':
         shiftUp();
