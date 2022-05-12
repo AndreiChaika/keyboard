@@ -129,16 +129,16 @@ function findKey(code) {
 // Создаём функцию по смене языка клавиш
 function translate() {
   // Для начала для каждого элемента массива обычных клавиш с классом shortkey применю функцию 
-  virtSymbols.forEach((element) => {
+  virtSymbols.forEach((el) => {
     // Задам переменную по вводимому элементу
-    const virtElement = element;
+    const virtElement = el;
     // К функции. Если Shift не нажат, то используется обычная клавиша Key
     if (shiftStatus === 0) {
       // И на место элемента вставляется тот code, что был найден в предыдущей функции по поиску совпадения
-      element.innerHTML = findKey(element.id).key;
+      virtElement.innerHTML = findKey(virtElement.id).key;
     } else {
       // Иначе на место элемента подставляется из массива значение шифтовой клавиши shiftKey
-      element.innerHTML = findKey(element.id).shiftKey;
+      virtElement.innerHTML = findKey(virtElement.id).shiftKey;
     }
   });
 }
@@ -152,6 +152,7 @@ function setLanguage(language) {
     case 'ru':
       keys = ruLang;
       break;
+
     default:
       break;
   }
@@ -271,7 +272,7 @@ function capslockClicked() {
   if (shiftStatus === 0) shiftStatus = 1;
   else shiftStatus = 0;
   translate();
-  virtCapsLock.classList.toggle('shiftactive');
+  virtCapsLock.classList.toggle('.active');
 }
 
 // Смена языка. Пусть первичное значение переменной - false, что действие по смене не было произведено
@@ -335,7 +336,7 @@ function keyDown(event) {
   event.preventDefault();
   const k = findKey(event.code);
   if (k === null) return;
-  if (k.key !== 'CapsLock') document.querySelector(`#${event.code}`).classList.add('active');
+  if (k.key !== 'CapsLock') document.querySelector(`#${event.code}`).classList.add('.active');
   if (k.class === 'shortkey') {
     let s;
     if (shiftStatus === 0) s = k.name;
@@ -380,7 +381,7 @@ function keyUp(event) {
   event.preventDefault();
   const k = findKey(event.code);
   if (k === null) return;
-  if (k.key !== 'CapsLock') document.querySelector(`#${event.code}`).classList.remove('active');
+  if (k.key !== 'CapsLock') document.querySelector(`#${event.code}`).classList.remove('.active');
   if (k.class !== 'shortkey') {
     switch (k.key) {
       case 'Shift':
@@ -416,4 +417,4 @@ virtAltR.addEventListener('mousedown', altClicked);
 virtAltL.addEventListener('mouseup', altUp);
 virtAltR.addEventListener('mouseup', altUp);
 virtSpace.addEventListener('click', spaceClicked);
-virtSymbols.forEach((element) => element.addEventListener('click', btnsClicked));
+virtSymbols.forEach((el) => el.addEventListener('click', btnsClicked));
