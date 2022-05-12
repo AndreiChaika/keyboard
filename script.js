@@ -272,7 +272,7 @@ function capslockClicked() {
   if (shiftStatus === 0) shiftStatus = 1;
   else shiftStatus = 0;
   translate();
-  virtCapsLock.classList.toggle('.active');
+  virtCapsLock.classList.toggle('active');
 }
 
 // Смена языка. Пусть первичное значение переменной - false, что действие по смене не было произведено
@@ -326,18 +326,12 @@ function altUp() {
 }
 
 
-//
-// Переходим к созданию переменных для клавиш с префиксом virt
-//
-
-
-
 function keyDown(event) {
   event.preventDefault();
   const k = findKey(event.code);
   if (k === null) return;
-  if (k.key !== 'CapsLock') document.querySelector(`#${event.code}`).classList.add('.active');
-  if (k.class === 'shortkey') {
+  if (k.key !== 'CapsLock') document.querySelector(`#${event.code}`).classList.add('active');
+  if (k.property === 'printable') {
     let s;
     if (shiftStatus === 0) s = k.name;
     else s = k.nameShift;
@@ -381,8 +375,8 @@ function keyUp(event) {
   event.preventDefault();
   const k = findKey(event.code);
   if (k === null) return;
-  if (k.key !== 'CapsLock') document.querySelector(`#${event.code}`).classList.remove('.active');
-  if (k.class !== 'shortkey') {
+  if (k.key !== 'CapsLock') document.querySelector(`#${event.code}`).classList.remove('active');
+  if (k.property !== 'printable') { {
     switch (k.key) {
       case 'Shift':
         shiftUp();
