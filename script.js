@@ -87,8 +87,8 @@ for (let i = 0; i < keys.length; i += 1) {
   keyboard.appendChild(row);
 }
 
-const inputText = document.querySelector('textarea');
-const keyboard = document.querySelector('#keyboard');
+const inputText = document.querySelector('.input');
+const keyboard = document.querySelector('.keyboard');
 const btnEnter = document.querySelector('#Enter');
 const btnTab = document.querySelector('#Tab');
 const btnDel = document.querySelector('#Delete');
