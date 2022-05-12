@@ -154,5 +154,10 @@ button {
 .large {
     width: 110px;
 }
-.medium {width: 95px;}
+footer p {
+    width: 320px;
+}
+main {
+    width: 90%;
+}
 }
