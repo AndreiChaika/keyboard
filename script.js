@@ -57,12 +57,12 @@ input.classList.add('input', 'animation');
 main.appendChild(input);
 // Размещаю поле для вывода текста с клавиатуры
 const textarea = document.createElement('textarea');
-textarea.classList.add('textarea', 'animation');
+textarea.classList.add('textarea');
 input.appendChild(textarea);
 
 // Добавляю секцию с классом "keyboard", где будет размещаться сама виртуальная клавиатура
 const keyboard = document.createElement('section');
-keyboard.classList.add('keyboard');
+keyboard.classList.add('keyboard', 'animation');
 main.appendChild(keyboard);
 
 // Вывожу клавиши клавиатуры 
