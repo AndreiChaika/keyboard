@@ -1,8 +1,8 @@
 const enLang = [
     [
         { key: '`', name: '`', nameShift: '~', code: 'Backquote', class: 'shortkey', property: 'printable', }, 
-        { code: 'Key1', key: '1', name: '1', nameShift: '!', class: 'shortkey',  property: 'printable',  keyCode: 49, location: 0, description: '1 Key',  unicode: '①', }, 
-        { code: 'Key2', key: '2', nameShift: '@', class: 'shortkey',  property: 'printable', }, 
+        { key: '1', name: '1', nameShift: '!', code: 'Key1',  class: 'shortkey',  property: 'printable', }, 
+        { code: 'Digit2', key: '2', name: '2', nameShift: '@', class: 'shortkey',  property: 'printable', }, 
         { code: 'Key3', key: '3', nameShift: '#', class: 'shortkey',  property: 'printable', }, 
         { code: 'Key4', key: '4', nameShift: '$', class: 'shortkey',  property: 'printable', }, 
         { code: 'Key5', key: '5', nameShift: '%', class: 'shortkey',  property: 'printable', }, 
