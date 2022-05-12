@@ -81,6 +81,7 @@ for (let i = 0; i < keys.length; i += 1) {
     button.classList.add(...keys[i][j].class.split(' '));
     button.innerHTML = keys[i][j].key;
     button.id = keys[i][j].code;
+    button.setAttribute(keys[i][j].property, true);
     row.appendChild(button);
   }
   keyboard.appendChild(row);
@@ -278,7 +279,6 @@ function capslockClicked() {
 let languagechange = false;
 function shiftClicked() {
   if (languagechange) return; // для предотвращения многократного изменения языка
-  // если альт нажат, 
   if (altStatus === 1) {
     languagechange = true;
     switch (lang) {
