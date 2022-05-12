@@ -111,7 +111,7 @@ footer {
     border-radius: 5px;
     box-shadow: 0 0.5em 0.5em -0.5em #555;
     padding: 5px 5px;
-    background-color: #eee;
+    background-color: #f1f1f1;
     margin-bottom: 20px;
     box-sizing: border-box;
     width: 100%;
@@ -120,8 +120,8 @@ footer {
     display: flex;
 }
 .longkey {
-    width: 60px;
-    background-color: #f7f7f7;
+    max-width: 120px;
+    background-color: #f1f1f1;
 }
 .shortkey {
     width: 40px;
