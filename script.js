@@ -61,10 +61,10 @@ const textarea = document.createElement('textarea');
 textarea.classList.add('textarea');
 input.appendChild(textarea);
 
-// Добавляю секцию с классом "keyboard", где будет размещаться сама виртуальная клавиатура
-const keyboard = document.createElement('section');
-keyboard.classList.add('keyboard', 'animation');
-main.appendChild(keyboard);
+// Добавляю секцию с классом "keyboardbody", где будет размещаться сама виртуальная клавиатура
+const keyboardbody = document.createElement('section');
+keyboardbody.classList.add('keyboardbody', 'animation');
+main.appendChild(keyboardbody);
 
 // Для начала привязываю массив с данными клавиш английской раскладки к переменной keys.
 let keys = enLang;
@@ -84,11 +84,11 @@ for (let i = 0; i < keys.length; i += 1) {
     button.setAttribute(keys[i][j].property, true);
     row.appendChild(button);
   }
-  keyboard.appendChild(row);
+  keyboardbody.appendChild(row);
 }
 
 const inputText = document.querySelector('.input');
-const keyText = document.querySelector('.keyboard');
+const keyboard = document.querySelector('.keyboard');
 const btnEnter = document.querySelector('#Enter');
 const btnTab = document.querySelector('#Tab');
 const btnDel = document.querySelector('#Delete');
@@ -333,7 +333,7 @@ inputText.addEventListener('keydown', keyDown);
 inputText.addEventListener('keyup', keyUp);
 keyText.addEventListener('keydown', keyDown);
 keyText.addEventListener('keyup', keyUp);
-btnEnter.addEventListener('click', enterClicked);
+btnEnter.addEventListener('click', enterClicked); 
 btnTab.addEventListener('click', tabClicked);
 btnDel.addEventListener('click', delClicked);
 btnBackspace.addEventListener('click', backspaceClicked);
