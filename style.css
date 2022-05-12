@@ -1,7 +1,9 @@
 body {
     font-family: PT Sans, sans-serif;
     font-size: 16px;
-    background-color: #999;
+    background: url(images/background.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
     -webkit-font-smoothing: antialiased;
     display: flex;
     flex-direction: column;
@@ -36,7 +38,7 @@ button {
     background-color: #f1f1f1;
     margin-bottom: 20px;
 }
-.button-row {
+.row {
     display: flex;
 }
 .shortkey {
