@@ -1,5 +1,5 @@
 const enLang = [
-    [{key: 'Control', name: 'Ctrl', nameShift: 'Ctrl', code: 'ControlLeft', }, ], 
+    [{key: 'Control', name: 'Ctrl', nameShift: 'Ctrl', keyCode: 17, code: 'ControlLeft', location: 1, }, ], 
 ];
  
 
