@@ -336,14 +336,14 @@ function keyDown(event) {
   event.preventDefault();
   const k = findKey(event.code);
   if (k === null) return;
-  if (k.key !== 'CapsLock') document.querySelector(`#${event.code}`).classList.add('active');
+  if (k.name !== 'CapsLock') document.querySelector(`#${event.code}`).classList.add('active');
   if (k.property !== 'printable') {
     let s;
     if (shiftStatus === 0) s = k.name;
     else s = k.shiftName;
     insertSymbols(s);
   } else {
-    switch (k.key) {
+    switch (k.name) {
       case 'Shift':
         if (!event.repeat) shiftClicked();
         break;
@@ -381,9 +381,9 @@ function keyUp(event) {
   event.preventDefault();
   const k = findKey(event.code);
   if (k === null) return;
-  if (k.key !== 'CapsLock') document.querySelector(`#${event.code}`).classList.remove('active');
+  if (k.name !== 'CapsLock') document.querySelector(`#${event.code}`).classList.remove('active');
   if (k.property !== 'printable') {
-    switch (k.key) {
+    switch (k.name) {
       case 'Shift':
         shiftUp();
         break;
