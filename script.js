@@ -3,7 +3,7 @@ import enLang from './enkeys.js';
 import ruLang from './rukeys.js';
 
 // 
-// Для начала задам структуру header, main, footer 
+// Для начала задам структуру header,npm init @eslint/config main, footer 
 //
 
 // Добавляю header, где будет размещен заголовок
