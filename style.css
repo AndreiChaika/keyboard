@@ -1,8 +1,11 @@
+@font-face{font-family:PFDinDisplayPro;src:url(PFDinDisplayPro-Regular.eot);src:local('☺'),url(PFDinDisplayPro-Regular.woff) format('woff'),url(PFDinDisplayPro-Regular.ttf) format('truetype'),url(PFDinDisplayPro-Regular.svg) format('svg');}
 body {
-    font-family: PT Sans, sans-serif;
+    font-family: PFDinDisplayPro;
+    box-sizing: border-box;
     font-size: 16px;
     background: url(images/background.jpg) no-repeat;
     background-size: cover;
+    background-position: center;
     height: 100vh;
     -webkit-font-smoothing: antialiased;
     display: flex;
@@ -14,6 +17,19 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 10px;
+}
+textarea {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #ccc;
+    margin: 0px 0px 30px;
+    padding: 10px;
+    resize: vertical;
+    width: 100%;
+    height: 176px;
+    color: #27221a;
+    font-size: 20px;
+    box-sizing: border-box;
 }
 button {
     height: 40px;
@@ -31,12 +47,14 @@ button {
     border: 1px solid #ccc;
 }
 .keyboard {
-    border: 3px solid #333;
+    border: 2px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0.5em 0.5em -0.5em #555;
     padding: 5px 5px;
     background-color: #f1f1f1;
     margin-bottom: 20px;
+    box-sizing: border-box;
+    width: 100%;
 }
 .row {
     display: flex;
