@@ -74,7 +74,6 @@ for (let i = 0; i < keys.length; i += 1) {
     button.classList.add(...keys[i][j].class.split(' '));
     button.innerHTML = keys[i][j].name;
     button.id = keys[i][j].code;
-    button.setAttribute(keys[i][j].property, true);
     divRows.appendChild(button);
   }
   keyboard.appendChild(divRows);
