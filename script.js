@@ -76,10 +76,10 @@ for (let i = 0; i < keys.length; i += 1) {
   row.classList.add('row');
   //  Внутрь цикла размещаю ещё один цикл, который внутри i-ых элементов массива будет перебирать элементы вложенных в них массивов (они же j) 
   for (let j = 0; j < keys[i].length; j += 1) {
-    // Задаю условие создания button внутри row после прохождения каждого j с добавлением класса (по ключу class извлекаю значение), с добавлением текста внутрь button (по ключу name извлекаю значение) и с добавлением в button своего id (по ключу code извлекаю значение)
+    // Задаю условие создания button внутри row после прохождения каждого j с добавлением класса (по ключу class извлекаю значение), с добавлением текста внутрь button (по ключу key извлекаю значение) и с добавлением в button своего id (по ключу code извлекаю значение)
     const button = document.createElement('button');
     button.classList.add(...keys[i][j].class.split(' '));
-    button.innerHTML = keys[i][j].name;
+    button.innerHTML = keys[i][j].key;
     button.id = keys[i][j].code;
     row.appendChild(button);
   }
@@ -135,10 +135,10 @@ function translate() {
     // К функции. Если Shift не нажат, то используется обычная клавиша Key
     if (shiftStatus === 0) {
       // И на место элемента вставляется тот code, что был найден в предыдущей функции по поиску совпадения
-      virtElement.innerHTML = findKey(virtElement.id).name;
+      virtElement.innerHTML = findKey(virtElement.id).key;
     } else {
       // Иначе на место элемента подставляется из массива значение шифтовой клавиши shiftKey
-      virtElement.innerHTML = findKey(virtElement.id).shiftName;
+      virtElement.innerHTML = findKey(virtElement.id).shiftKey;
     }
   });
 }
@@ -336,14 +336,14 @@ function keyDown(event) {
   event.preventDefault();
   const k = findKey(event.code);
   if (k === null) return;
-  if (k.name !== 'CapsLock') document.querySelector(`#${event.code}`).classList.add('active');
+  if (k.key !== 'CapsLock') document.querySelector(`#${event.code}`).classList.add('active');
   if (k.property !== 'printable') {
     let s;
-    if (shiftStatus === 0) s = k.name;
-    else s = k.shiftName;
+    if (shiftStatus === 0) s = k.key;
+    else s = k.shiftKey;
     insertSymbols(s);
   } else {
-    switch (k.name) {
+    switch (k.key) {
       case 'Shift':
         if (!event.repeat) shiftClicked();
         break;
@@ -381,9 +381,9 @@ function keyUp(event) {
   event.preventDefault();
   const k = findKey(event.code);
   if (k === null) return;
-  if (k.name !== 'CapsLock') document.querySelector(`#${event.code}`).classList.remove('active');
+  if (k.key !== 'CapsLock') document.querySelector(`#${event.code}`).classList.remove('active');
   if (k.property !== 'printable') {
-    switch (k.name) {
+    switch (k.key) {
       case 'Shift':
         shiftUp();
         break;
