@@ -11,6 +11,7 @@ import enLang from './enkeys.js';
 
 // Добавляю header, где будет размещен заголовок
 const header = document.createElement('header');
+header.classList.add('animation');
 document.body.appendChild(header);
 
 // Добавляю main, где будет размещена вся структура клавиатуры с полем вывода текста
@@ -19,6 +20,7 @@ document.body.appendChild(main);
 
 // Добавляю footer, где будет размещена информация по смене языка
 const footer = document.createElement('footer');
+footer.classList.add('animation');
 document.body.appendChild(footer);
 
 //
@@ -51,11 +53,11 @@ p.textContent = 'Клавиатура создана для ОС Windows. Пер
 
 // Добавляю секцию с классом "input", где будет размещаться поле для вывода текста с клавиатуры
 const input = document.createElement('section');
-input.classList.add('input');
+input.classList.add('input animation');
 main.appendChild(input);
 // Размещаю поле для вывода текста с клавиатуры
 const textarea = document.createElement('textarea');
-textarea.classList.add('textarea');
+textarea.classList.add('textarea animation');
 input.appendChild(textarea);
 
 // Добавляю секцию с классом "keyboard", где будет размещаться сама виртуальная клавиатура
