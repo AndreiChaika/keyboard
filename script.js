@@ -39,7 +39,7 @@ h1.textContent = 'Virtual Keyboard by Andrei Chaika';
 // Добавляю подпись p с текстом в footer
 const p = document.createElement('p');
 footer.appendChild(p);
-p.textContent = `Клавиатура создана для Операционной системы Windows.<br>Переключение языка осуществляется через комбинацию Alt + Shift`;
+p.textContent = 'Клавиатура создана для Операционной системы Windows. Переключение языка осуществляется через комбинацию Alt + Shift';
 
 
 
@@ -53,11 +53,11 @@ p.textContent = `Клавиатура создана для Операционн
 
 // Добавляю секцию с классом "input", где будет размещаться поле для вывода текста с клавиатуры
 const input = document.createElement('section');
-input.classList.add('input animation');
+input.classList.add('input', 'animation');
 main.appendChild(input);
 // Размещаю поле для вывода текста с клавиатуры
 const textarea = document.createElement('textarea');
-textarea.classList.add('textarea animation');
+textarea.classList.add('textarea', 'animation');
 input.appendChild(textarea);
 
 // Добавляю секцию с классом "keyboard", где будет размещаться сама виртуальная клавиатура
