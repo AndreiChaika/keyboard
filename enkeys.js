@@ -1,6 +1,6 @@
 const enLang = [
     [
-        { key: '`', name: '`', nameShift: '~', keyCode: 192, code: 'Backquote', location: 0, description: 'Backtick / grave accent / ñ / æ / ö', class: 'shortkey', property: 'printable', }, 
+        { key: '`', name: '`', nameShift: '~', keyCode: 192, code: 'Backquote', class: 'shortkey', property: 'printable', }, 
         { code: 'Key1', key: '1', nameShift: '!', class: 'shortkey',  property: 'printable',  keyCode: 49, location: 0, description: '1 Key',  unicode: '①', }, 
         { code: 'Key2', key: '2', nameShift: '@', class: 'shortkey',  property: 'printable', }, 
         { code: 'Key3', key: '3', nameShift: '#', class: 'shortkey',  property: 'printable', }, 
