@@ -6,7 +6,7 @@ const enLang = [
         { code: 'Key_3', name: '3', shiftName: '#', class: 'shortkey',  property: 'printable', }, 
         { code: 'Key_4', name: '4', shiftName: '$', class: 'shortkey',  property: 'printable', }, 
         { code: 'Key_5', name: '5', shiftName: '%', class: 'shortkey',  property: 'printable', }, 
-        { code: 'Key_6', name: '6', shiftName: '6', class: 'shortkey',  property: 'printable', }, 
+        { code: 'Key_6', name: '6', shiftName: '^', class: 'shortkey',  property: 'printable', }, 
         { code: 'Key_7', name: '7', shiftName: '&', class: 'shortkey',  property: 'printable', }, 
         { code: 'Key_8', name: '8', shiftName: '*', class: 'shortkey',  property: 'printable', }, 
         { code: 'Key_9', name: '9', shiftName: '(', class: 'shortkey',  property: 'printable', }, 
