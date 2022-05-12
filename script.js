@@ -63,18 +63,17 @@ const keyboard = document.createElement('section');
 keyboard.classList.add('keyboard');
 main.appendChild(keyboard);
 
-
-
+// Вывожу клавиши клавиатуры 
 let keys = enLang;
 for (let i = 0; i < keys.length; i += 1) {
-  const divRows = document.createElement('div');
-  divRows.classList.add('button-row');
+  const row = document.createElement('div');
+  row.classList.add('row');
   for (let j = 0; j < keys[i].length; j += 1) {
     const button = document.createElement('button');
     button.classList.add(...keys[i][j].class.split(' '));
     button.innerHTML = keys[i][j].name;
     button.id = keys[i][j].code;
-    divRows.appendChild(button);
+    row.appendChild(button);
   }
-  keyboard.appendChild(divRows);
+  keyboard.appendChild(row);
 }
